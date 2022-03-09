@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
+import Layout from '@/layout/index.vue'
 
 Vue.use(VueRouter)
 
@@ -13,7 +14,7 @@ const routes: Array<RouteConfig> = [
   },
   {
     path: '/',
-    // component: Layout,
+    component: Layout,
     children: [
       {
         path: '',
